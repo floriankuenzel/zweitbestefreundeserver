@@ -12,6 +12,13 @@ usercache.json
 log4j2.xml
 eula.txt
 
+.forge-installed-1.14.4-28.2.6
+.mixin.out/
+crash-reports/
+journeymap/
+
+usernamecache.json
+
 server.properties
 
 defaultconfigs 
