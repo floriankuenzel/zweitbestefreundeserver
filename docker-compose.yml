@@ -15,7 +15,7 @@ services:
       CONSOLE: "false"
       VERSION: "1.14.4"
       TYPE: "FORGE"
-      FORGEVERSION: "28.2.6"
+      FORGEVERSION: "28.2.0"
     image: itzg/minecraft-server
     restart: always
     networks:
