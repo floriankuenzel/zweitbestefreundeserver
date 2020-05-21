@@ -1,0 +1,17 @@
+
+#Debugging settings
+[Debugging]
+	#Enable general debug features, display extra debug info
+	debug = false
+
+#General settings
+[General]
+	#Map scale new mega maps start with by default
+	#Range: 0 ~ 127
+	defaultScale = 1
+	#Maximum map scale for mega maps
+	#Range: 0 ~ 127
+	maxScale = 10
+	#Disable vanilla map recipes and replace with mega map recipes instead
+	disableVanillaRecipes = true
+

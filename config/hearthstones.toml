@@ -1,0 +1,38 @@
+#Removes the recipe of Shabby Tavern/Hearthing Planks, and reverts the recipe of Tavern/Hearthstone to much cheaper version.
+easyMode = false
+
+[hearthstone]
+	#Cooldown of the Hearthstone, in seconds.
+	#Range: > 0
+	cooldown = 75
+	#Number of times the Hearthstone can be used. Set to 0 if you don't want it to wear off.
+	#Range: > 0
+	maxUse = 0
+
+[hearthingPlanks]
+	#Cooldown of the Hearthing Planks, in seconds.
+	#Range: > 0
+	cooldown = 75
+	#Number of times the Hearthing Planks can be used. Set to 0 if you don't want it to wear off.
+	#Range: > 0
+	maxUse = 30
+
+[hearthingGem]
+	#Cooldown of the Hearthing Gem, in seconds.
+	#Range: > 0
+	cooldown = 150
+	#Maximum distance the Hearthing Gem can be used without breaking it.
+	#Range: 0.0 ~ Infinity
+	travelDistanceThreshold = 500.0
+	#Number of times the Hearthing Gem can be used. Set to 0 if you don't want it to wear off.
+	#Range: > 0
+	maxUse = 0
+
+[companionHearthstone]
+	#Cooldown of the Companion Hearthstone, in seconds.
+	#Range: > 0
+	cooldown = 225
+	#Number of times the Companion Hearthstone can be used. Set to 0 if you don't want it to wear off.
+	#Range: > 0
+	maxUse = 0
+

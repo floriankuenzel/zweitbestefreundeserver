@@ -1,0 +1,23 @@
+
+#Common Settings for Seafaring
+[Commands]
+	#Enables all shortened gamemode commands (default: true)
+	enableGameModeCommands = true
+
+[Effects]
+	#Zablu Vines stun duration in ticks (default: 220)
+	#Range: 20 ~ 1200
+	zabluStunDuration = 220
+
+[Spawning]
+	#Toggle Sea Stones spawning (default: true)
+	enableSeaStoneSpawning = true
+	#Toggle Swamp Feeder spawning (default: true)
+	enableSwampfeederSpawning = true
+	#Toggle Salt Piles spawning (default: true)
+	enableSaltPileSpawning = true
+	#Toggle Zablu Vines spawning (default: true)
+	enableZabluVineSpawning = true
+	#Toggle Haddock spawning (default: true)
+	enableHaddockSpawning = true
+

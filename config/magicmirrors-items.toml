@@ -1,0 +1,9 @@
+#Enable / Disable Magic Mirror Ingredients [true / false]
+ingredientsEnabled = false
+#Enable / Disable Dimensional Mirrors [true / false]
+dimensionalMirrorsEnabled = true
+#Enable / Disable Dimension Crystal (NO TOUCHY PLZ) [true / false]
+dimensionCrystalEnabled = true
+#Enable / Disable Magic Mirrors [true / false]
+magicmirrors = true
+

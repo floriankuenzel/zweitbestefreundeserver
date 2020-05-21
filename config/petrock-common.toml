@@ -1,0 +1,6 @@
+
+#PetRock Common Config
+[worldgen]
+	#Enables the Generation of Stoneium Ore
+	enablestoneium = true
+

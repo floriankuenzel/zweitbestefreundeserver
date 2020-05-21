@@ -1,0 +1,19 @@
+
+[General]
+	#recycle_round_down [false/true|default:false]
+	recycle_round_down = false
+	#recycle_magic_item [false/true|default:true]
+	recycle_magic_item = true
+	#time_to_recycle [5..10000|default:100]
+	#Range: 5 ~ 10000
+	time_to_recycle = 100
+	#allow_sound [false/true|default:true]
+	allow_sound = true
+	#chance_loss [0..100|default:0]
+	#Range: 0 ~ 100
+	chance_loss = 0
+	#only_user_recipes [false/true|default:false]
+	only_user_recipes = false
+	#recycle_enchanted_book [false/true|default:true]
+	recycle_enchanted_book = true
+

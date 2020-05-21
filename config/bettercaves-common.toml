@@ -1,0 +1,196 @@
+
+["Better Caves"]
+	# Lava (or water in water regions) spawns at and below this y-coordinate.
+	# Default: 10
+	#Range: 0 ~ 255
+	"Liquid Altitude" = 10
+	# Set this to true to replace the usual bedrock generation with a single flat layer.
+	# Default: true
+	"Flatten Bedrock" = true
+	#The block used for lava generation at and below the Liquid Altitude. Defaults to regular lava if an invalid block is given.
+	# Default: minecraft:flowing_lava
+	"Lava Block" = "minecraft:lava"
+	#The block used for water generation in  water caves/caverns at and below the Liquid Altitude. Defaults to regular water if an invalid block is given.
+	# Default: minecraft:water
+	"Water Block" = "minecraft:water"
+
+	["Better Caves"."Cave Generation"]
+		# The maximum altitude at which caves can generate.
+		# Default: 128
+		#Range: 0 ~ 255
+		"Max Cave Altitude" = 128
+		# Determines how large cave regions are.
+		# Controls how long a cave system of a certain cave type extends before intersecting with a cave system of another type.
+		# Larger Region Size = more cave interconnectivity for a given area, but possibly less variation.
+		# Accepted values: Small, Medium, Large, ExtraLarge
+		# Default: Large
+		"Cave Region Size" = "Large"
+		# Determines how large cavern regions are. This controls the average size of caverns.
+		# Accepted values: Small, Medium, Large, ExtraLarge
+		# Default: Small
+		"Cavern Region Size" = "Small"
+		# The depth from a given point on the surface (or the Max Cave Altitude, whichever is lower) at which caves start to close off. Decrease this to create more cave openings in the sides of mountains. Increase to create less above-surface openings.
+		# Default: 10
+		#Range: 0 ~ 255
+		"Cave Surface Cutoff Depth" = 10
+
+		["Better Caves"."Cave Generation"."Lava Caverns"]
+			# Changes width of formations in caverns. Lower value = more open caverns with larger features.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Horizontal" = 1.0
+			# Determines how frequently Lava Caverns spawn.
+			# Accepted values: None, Rare, Normal, Common, VeryCommon, Custom
+			# Default: Normal
+			"Lava Cavern Frequency" = "Normal"
+			#Custom value for cavern frequency. Only works if Lava Cavern Frequency is set to Custom. 0 = 0% chance of spawning, 1.0 = 50% chance of spawning (which is the max value). The value does not scale linearly. 
+			# Provided values:
+			# None: 0
+			# Rare: 0.2
+			# Normal: 0.6
+			# Common: 0.7
+			# VeryCommon: 0.9
+			#Range: 0.0 ~ 1.0
+			"Lava Cavern Frequency Custom Value" = 1.0
+			# The bottom cutoff y-coordinate at which Lava Caverns stop generating.
+			# Default: 1
+			#Range: 0 ~ 255
+			"Cavern Bottom Altitude" = 1
+			# Changes height of formations in caverns. Lower value = more open caverns with larger features.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Vertical" = 1.0
+			# The top cutoff y-coordinate of Lava Caverns. Note that caverns will attempt to close off anyway if this value is greater than the surface y-coordinate.
+			# Default: 30
+			#Range: 0 ~ 255
+			"Cavern Top Altitude" = 30
+
+		["Better Caves"."Cave Generation"."Water Regions"]
+			#Custom value for water region frequency. Only works if Water Region Frequency is set to Custom. 0 = 0% chance of spawning, 1.0 = 100% chance of spawning. The value may not scale linearly. 
+			# Provided values:
+			# Rare: 0.3
+			# Normal: 0.425
+			# Common: 0.55
+			# VeryCommon: 0.65
+			# Always: 1.0
+			#Range: 0.0 ~ 1.0
+			"Water Region Frequency Custom Value" = 1.0
+			# Determines how frequently water regions spawn
+			# Accepted values: Rare, Normal, Common, VeryCommon, Always, Custom
+			# Default: Normal
+			"Water Region Frequency" = "Normal"
+			# Set to true for caves/caverns to have a chance of spawning as their water-based variants, instead of having lava.
+			# Default: true
+			"Enable Water Cave/Cavern Regions" = true
+
+			["Better Caves"."Cave Generation"."Water Regions"."Water Caverns"]
+				# Changes width of formations in caverns. Lower value = more open caverns with larger features.
+				# Default: 1.0
+				#Range: 0.0 ~ 20.0
+				"Compression - Horizontal" = 1.0
+				# Changes height of formations in caverns. Lower value = more open caverns with larger features.
+				# Default: 1.0
+				#Range: 0.0 ~ 20.0
+				"Compression - Vertical" = 1.0
+
+		["Better Caves"."Cave Generation"."Type 1 Caves"]
+			# Determines how frequently Type 1 Caves spawn. If this is anything but VeryCommon (the default), some areas will not have caves at all.
+			# Accepted values: None, Rare, Common, VeryCommon, Custom
+			# Default: VeryCommon
+			"Type 1 Cave Frequency" = "VeryCommon"
+			# Changes width of caves. Lower value = wider caves.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Horizontal" = 1.0
+			# The minimum y-coordinate at which caves start generating.
+			# Default: 1
+			#Range: 0 ~ 255
+			"Cave Bottom Altitude" = 1
+			# Changes height of caves. Lower value = taller caves with steeper drops.
+			# Default: 3.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Vertical" = 3.0
+			# Custom value for cave frequency. Only works if Type 1 Cave Frequency is set to Custom. 0 = 0% chance of spawning, 1.0 = 50% chance of spawning (which is the max value). The value may not scale linearly. 
+			# Provided values:
+			# None: 0
+			# Rare: 0.4
+			# Common: 0.8
+			# VeryCommon: 1.0
+			#Range: 0.0 ~ 1.0
+			"Type 1 Cave Frequency Custom Value" = 1.0
+
+		["Better Caves"."Cave Generation"."Type 2 Caves"]
+			# Changes width of caves. Lower value = wider caves.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Horizontal" = 1.0
+			# Determines how frequently Type 2 Caves spawn. If this is anything but VeryCommon (the default), some areas will not have caves at all.
+			# Accepted values: None, Rare, Common, VeryCommon, Custom
+			# Default: VeryCommon
+			"Type 2 Cave Frequency" = "VeryCommon"
+			# The minimum y-coordinate at which caves start generating.
+			# Default: 1
+			#Range: 0 ~ 255
+			"Cave Bottom Altitude" = 1
+			# Changes height of caves. Lower value = taller caves with steeper drops.
+			# Default: 3.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Vertical" = 3.0
+			# Custom value for cave frequency. Only works if Type 2 Cave Frequency is set to Custom. 0 = 0% chance of spawning, 1.0 = 50% chance of spawning (which is the max value). The value may not scale linearly. 
+			# Provided values:
+			# None: 0
+			# Rare: 0.4
+			# Common: 0.8
+			# VeryCommon: 1.0
+			#Range: 0.0 ~ 1.0
+			"Type 2 Cave Frequency Custom Value" = 1.0
+
+		["Better Caves"."Cave Generation"."Floored Caverns"]
+			# Determines how frequently Floored Caverns spawn.
+			# Accepted values: None, Rare, Normal, Common, VeryCommon, Custom
+			# Default: Normal
+			"Floored Cavern Frequency" = "Normal"
+			# Changes width of formations in caverns. Lower value = more open caverns with larger features.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Horizontal" = 1.0
+			# The bottom cutoff y-coordinate at which Floored Caverns stop generating.
+			# Default: 1
+			#Range: 0 ~ 255
+			"Cavern Bottom Altitude" = 1
+			# Changes height of formations in caverns. Lower value = more open caverns with larger features.
+			# Default: 1.0
+			#Range: 0.0 ~ 20.0
+			"Compression - Vertical" = 1.0
+			#Custom value for cavern frequency. Only works if Floored Cavern Frequency is set to Custom. 0 = 0% chance of spawning, 1.0 = 50% chance of spawning (which is the max value). The value does not scale linearly. 
+			# Provided values:
+			# None: 0
+			# Rare: 0.2
+			# Normal: 0.6
+			# Common: 0.7
+			# VeryCommon: 0.9
+			#Range: 0.0 ~ 1.0
+			"Floored Cavern Frequency Custom Value" = 1.0
+			# The top y-coordinate at which Floored Caverns start generating. Note that caverns will attempt to close off anyway if this value is greater than the surface y-coordinate.
+			# Default: 30
+			#Range: 0 ~ 255
+			"Cavern Top Altitude" = 30
+
+		["Better Caves"."Cave Generation"."Vanilla Generation"]
+			# Set to true to enable normal vanilla ravine generation.
+			# Default: true
+			"Enable Ravines" = true
+			# Set to true to enable underwater vanilla ravine generation in ocean biomes.
+			# Default: true
+			"Enable Underwater Ravines" = true
+
+	["Better Caves"."Debug Settings"]
+		# The visualizer creates worlds where there are no blocks except those indicating where caves and caverns would be carved out in a regular world. This is useful for visualizing the kinds ofcaves and caverns your current config options will create.
+		# Type 1 Cave: Oak Planks
+		# Type 2 Cave: Cobblestone
+		# Lava Cavern: Redstone Block
+		# Floored Cavern: Gold Block
+		# Water Cavern: Lapis Block
+		# Default: false
+		"Enable DEBUG Visualizer" = false
+
