@@ -1,0 +1,8 @@
+
+#General settings
+[general]
+	#Qicksand/Mud/Toxin generation in the world
+	world_generation = true
+	#Activate the Update-Checker
+	update-checker = true
+

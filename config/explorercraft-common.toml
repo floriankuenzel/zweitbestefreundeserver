@@ -1,0 +1,84 @@
+
+["Spawn Entities"]
+
+	["Spawn Entities".entity]
+		#Decide if you want the Enderreeper to spawn in your world (The End Dimension)
+		enderreeper_enabled = true
+		#Decide if you want the Infected Zombie to spawn in your world
+		infested_skeleton_enabled = true
+		#Decide if you want the Enderreeper to spawn in the Nether (Similar to current endermen)
+		enderreeper_nether_spawn_enabled = false
+		#Decide if you want the Infected Creeper to spawn in your world
+		infected_creeper_enabled = true
+		#Decide how frequently you want the wizard tower/wizard to spawn in your world, Wizards will only spawn in a Wizard Tower, no-other places (higher spawns increase changes for dodgey worldgen)
+		#Range: 0 ~ 50
+		wizard_weight = 12
+		#Decide if you want the Enderreeper to spawn in the overworld (Similar to the current enderman)
+		enderreeper_overworld_spawn_enabled = false
+		#Decide if you want the Brush Stooge to spawn in your world
+		brush_stooge_enabled = true
+		#Decide if you want the Enderghast to spawn in your world (The End Dimension)
+		enderghast_enabled = true
+
+["Spawn Biomes"]
+	#Spawn Snowdonia in Overworld
+	spawnSnowdonia = true
+	#Spawn Bamboo Forests in Overworld
+	spawnBambooForest = true
+	#Spawn Fungal Forests in Overworld
+	spawnFungalForest = true
+	#Spawn Forested Mountains in Overworld
+	spawnForestedMountain = true
+
+["Spawn World Generation"]
+	#Spawn Amethysts in Overworld
+	spawnAmethyst = true
+	#Spawn Basalt in Overworld
+	spawnBasalt = true
+	#Spawn Ruby in Overworld
+	spawnRuby = true
+	#Spawn Slime caves in Overworld
+	spawnSpawnChunkCaves = true
+	#Spawn Jade in Overworld
+	spawnJade = true
+	#Spawn Marble in Overworld
+	spawnMarble = true
+
+["Biome Controllers"]
+	#Fungal Forests Weight
+	#Range: 0 ~ 100
+	fungalForestWeight = 8
+	#Bamboo Forest Weight
+	#Range: 0 ~ 100
+	bambooForestWeight = 8
+	#Snowdonia Weight
+	#Range: 0 ~ 100
+	snowdoniaWeight = 8
+	#Forested Mountain Weight
+	#Range: 0 ~ 100
+	forestedMountainWeight = 8
+
+["World Generation Controllers"]
+	#Chance of spawning Marble
+	#Range: 0 ~ 100
+	marbleChance = 10
+	#Size of Basalt Vein
+	#Range: 0 ~ 33
+	basaltVeinSize = 33
+	#Size of Marble Vein
+	#Range: 0 ~ 33
+	marbleVeinSize = 33
+	#Chance of spawning Basalt
+	#Range: 0 ~ 100
+	basaltChance = 10
+
+["Vanilla Tweaks"]
+	#Slate Dungeon Rarity
+	#Range: 0 ~ 100
+	slateDungeonRarity = 10
+	#Allow Swimming Horses
+	swimmingHorse = true
+	#Ash Tree Rarity
+	#Range: 0 ~ 100
+	ashTreeRarity = 25
+

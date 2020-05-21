@@ -1,0 +1,11 @@
+
+[modeloverrides]
+	#Model Overrides based on NBT or on Meta. Advanced Users Only!
+	overrides = ["minecraft:hopper->(block)minecraft:hopper", "minecraft:cauldron->(block)minecraft:cauldron", "minecraft:brewing_stand->(block)minecraft:brewing_stand", "minecraft:flower_pot->(block)minecraft:flower_pot", "minecraft:redstone_wire->(item)minecraft:redstone"]
+
+[settings]
+	#If the front of the Tile Entities should face the player or should face outward
+	facePlayer = false
+	#Arms should render on sides when carrying
+	renderArms = true
+
