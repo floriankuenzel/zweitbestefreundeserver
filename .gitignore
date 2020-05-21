@@ -19,11 +19,7 @@ journeymap/
 
 usernamecache.json
 
-server.properties
-
 defaultconfigs 
 world
 libraries
 logs                         
-mods
-config

@@ -18,18 +18,3 @@ services:
       FORGEVERSION: "28.2.0"
     image: itzg/minecraft-server
     restart: always
-    networks:
-      minecraft: {}
-  rcon:
-    image: itzg/rcon
-    ports:
-      - "4326:4326"
-      - "4327:4327"
-    volumes:
-      - "/home/mc/docker/rcon:/opt/rcon-web-admin/db"
-    networks:
-      minecraft: {}
-
-networks:
-  minecraft:
-    external: false
