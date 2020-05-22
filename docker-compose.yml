@@ -6,7 +6,7 @@ services:
     ports:
       - 25565:25565
     command:
-      - --mapping=minecraft.$DOMAIN=mc_minecraft:25565
+      - --mapping=minecraft.$DOMAIN=minecraft:25565
     restart: always
     networks:
       - minecraft
