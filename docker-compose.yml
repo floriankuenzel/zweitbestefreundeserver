@@ -34,5 +34,5 @@ services:
     network:
       - minecraft
       
-network:
+networks:
   minecraft: {}
