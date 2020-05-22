@@ -1,20 +1,31 @@
-  
-version: '3'
+version: '3.7'
 
 services:
-  minecraft:
+  router:
+    image: itzg/mc-router
     ports:
-      - "25565:25565"
+      - 25565:25565
+    command:
+      - --mapping=minecraft.$DOMAIN=minecraft:25565
+    restart: always
+  minecraft:
     volumes:
-      - "/home/mc/docker/mc:/data"
+      - "/home/mc/docker/mc:/data
     environment:
       EULA: "TRUE"
-      MAX_MEMORY: 8G
       VIEW_DISTANCE: 10
       MAX_PLAYERS: 10
-      CONSOLE: "false"
+      INIT_MEMORY: 2G
+      MAX_MEMORY: 6G
+      ALLOW_FLIGHT: "true"
+      LEVEL_TYPE: "BIOMESOP"
+      CONSOLE: "true"
       VERSION: "1.14.4"
       TYPE: "FORGE"
       FORGEVERSION: "28.2.0"
+      JVM_OPTS: "-Dfml.queryResult=confirm"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "${RCON_PASSWORD?Variable RCON_PASSWORD not set}"
+      RCON_PORT: 28016
     image: itzg/minecraft-server
     restart: always
