@@ -8,7 +8,7 @@ services:
     command:
       - --mapping=minecraft.$DOMAIN=minecraft:25565
     restart: always
-    network:
+    networks:
       - minecraft
   minecraft:
     volumes:
@@ -31,7 +31,7 @@ services:
       RCON_PORT: 28016
     image: itzg/minecraft-server
     restart: always
-    network:
+    networks:
       - minecraft
       
 networks:
