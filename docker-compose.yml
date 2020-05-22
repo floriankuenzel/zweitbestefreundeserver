@@ -18,7 +18,7 @@ services:
       VIEW_DISTANCE: 10
       MAX_PLAYERS: 10
       INIT_MEMORY: 2G
-      MAX_MEMORY: 6G
+      MAX_MEMORY: 8G
       ALLOW_FLIGHT: "true"
       LEVEL_TYPE: "BIOMESOP"
       CONSOLE: "true"
