@@ -10,7 +10,7 @@ services:
     restart: always
   minecraft:
     volumes:
-      - "/home/mc/docker/mc:/data
+      - "/home/mc/docker/mc:/data"
     environment:
       EULA: "TRUE"
       VIEW_DISTANCE: 10
