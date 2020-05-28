@@ -20,8 +20,11 @@ journeymap/
 usernamecache.json
 
 defaultconfigs 
-world
+world/*
+!world/serverconfig
 libraries
 logs                         
+
+config/worldedit/sessions/
 
 mc-compose.sh

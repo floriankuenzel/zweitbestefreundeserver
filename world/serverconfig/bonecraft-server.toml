@@ -1,0 +1,5 @@
+
+[general]
+	#Enable fossil generation in world?
+	serverEnableFossil = true
+

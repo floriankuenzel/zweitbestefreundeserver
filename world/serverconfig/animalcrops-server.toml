@@ -1,0 +1,27 @@
+
+[crop]
+	#List of animals to add as animal seeds. Must extend MobEntity and have a spawn egg.
+	animalCrops = ["minecraft:cat", "minecraft:chicken", "minecraft:cow", "minecraft:donkey", "minecraft:fox", "minecraft:horse", "minecraft:llama", "minecraft:mooshroom", "minecraft:ocelot", "minecraft:panda", "minecraft:parrot", "minecraft:pig", "minecraft:polar_bear", "minecraft:rabbit", "minecraft:sheep", "minecraft:villager", "minecraft:wolf"]
+	#Determines if bonemeal can be applied to the animal crop
+	bonemeal = false
+	#List of water animals to add as water animal crops: anemonemals. Must extend MobEntity and have a spawn egg.
+	anemonemals = ["minecraft:cod", "minecraft:dolphin", "minecraft:pufferfish", "minecraft:salmon", "minecraft:squid", "minecraft:tropical_fish", "minecraft:turtle"]
+
+[pollen]
+	#If CONSUME, the entity is killed when pollen are used, though no items are dropped
+	#If DAMAGE, the entity will take 2 hearts of damage when pollen are used
+	#Allowed Values: CONSUME, DAMAGE, NONE
+	action = "DAMAGE"
+	#Animals that pollen cannot be used on, from either animal crops or anemonemals
+	blacklist = []
+
+[grassDrops]
+	#If true, grass will rarely drop a random animal seed
+	animal_seeds = false
+	#If true, sea grass will rarely drop a random anemonemal
+	anemonemal = false
+	#Animals that will not drop from grass or sea grass, based on the other two lists
+	blacklist = []
+	#If true, grass will rarely drop animal pollen
+	animal_pollen = true
+

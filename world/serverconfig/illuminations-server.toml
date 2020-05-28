@@ -1,0 +1,17 @@
+
+["Firefly Grass"]
+	#How close by a player needs to be for fireflies to start spawning (value in chunks)
+	#Range: 1 ~ 32
+	start_spawning_flies = 1
+	#How many fireflies need to be near a firefly grass block for it to stop spawning them
+	#Range: 6 ~ 100
+	max_flies_near_block = 26
+	#The block radius in which max_flies_near_block is checked
+	#Range: 1 ~ 128
+	max_flies_radius_near_block = 16
+
+["Firefly Entity"]
+	#How far away a player has to be for fireflies to despawn (value in chunks)
+	#Range: 1 ~ 32
+	despawn_firefly = 1
+

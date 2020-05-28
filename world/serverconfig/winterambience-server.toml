@@ -1,0 +1,18 @@
+
+[snow]
+
+	[snow.pile_snow]
+		#Rate of snow piling (smaller numbers are faster)
+		#Range: 1 ~ 128
+		rate = 32
+		#Pile snow [default:true]
+		enable = true
+		#Make snow pile infinitely [default:false]
+		infinite = false
+		#Keep snow piling level [default:true]
+		keep_level = true
+
+	[snow.melt_snow]
+		#Melt snow in the sunlight [default:true]
+		enable = true
+
