@@ -4,3 +4,4 @@
 	createCurios = []
 	#List of curio types to disable by default
 	disabledCurios = []
+

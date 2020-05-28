@@ -1,5 +1,5 @@
-# RandomPatches configuration
-ment speed limits.
+
+# Options related to the movement speed limits.
 [speedLimits]
 	# The maximum player elytra speed.
 	# The vanilla default is 300.0.
